@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar is-success top-bar">
+        <div class="logo">
+          <i style="font-size: 40px;" class="fa">&#xf07a;</i><h1>SHOPCART</h1>
+        </div>
+        <div class="indice">
+          <li>Home</li>
+          <li>Mais produtos</li>
+          <li>Contato</li>
+        </div>
+      </nav>
+    </header>
+    <section class="sectionSearch">
+      <div class="search">
+        <input class="inputSearch input" type="text" placeholder="Ex: Computador...">
+        <button class="searchButton button is-success">Buscar</button>
+      </div>
+    </section>
+    <div class="loading">
+      <div class="loader"></div>
+    </div>
+    <section class="container">
+      <section class="items column "></section>
+      <section class="cart column">
+        <span class="cart__title title is-3">Carrinho de compras</span>
+        <button class="empty-cart button is-warning"><i style="font-size: 24px;" class="fa">&#xf07a;</i>Esvaziar carrinho</button>
+        <ol class="cart__items" id="listOfCart"></ol>
+        <div class="payMent">
+          <p>Total: <span class="total-price"></span></p>
+        </div>
+      </section>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
